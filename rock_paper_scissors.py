@@ -56,3 +56,5 @@ elif user_input < computer_choice:
     print("You lose.")
 elif user_input > computer_choice:
     print("You win.")
+elif user_input >= 3:
+    print("You typed an invalid number, you lose!")
