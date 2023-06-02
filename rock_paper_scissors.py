@@ -46,7 +46,9 @@ elif computer_choice == 1:
 else:
     print(scissors)
 
-if user_input == computer_choice:
+if user_input >= 3 or user_input < 0:
+    print("You typed an invalid number, you lose!")
+elif user_input == computer_choice:
     print("Draw.")
 elif user_input == 0 and computer_choice == 2:
     print("You win.")
@@ -56,5 +58,5 @@ elif user_input < computer_choice:
     print("You lose.")
 elif user_input > computer_choice:
     print("You win.")
-elif user_input >= 3:
+if user_input >= 3 or user_input < 0:
     print("You typed an invalid number, you lose!")
